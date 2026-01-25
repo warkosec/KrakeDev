@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="puntoDeVenta.css" />
+    <meta charset="UTF-8" />
+    <script src="utilitarios.js"></script>
+    <script src="serviciosPuntoDeVenta.js"></script>
+    <script src="puntoDeVenta.js"></script>
+</head>
+
+<body>
+    <div class="pagina">
+        <div class="contenedor">
+
+            <h2 class="titulo">PUNTO DE VENTA</h2>
+
+            <div class="grid">
+
+                <div class="formulario">
+                    <div class="fila">
+                        <label class="etiqueta">PRODUCTO</label>
+                        <input type="text" id="txtProducto" class="caja" />
+                    </div>
+
+                    <div class="fila">
+                        <label class="etiqueta">CANTIDAD</label>
+                        <input type="text" id="txtCantidad" class="caja" />
+                    </div>
+
+                    <div class="fila">
+                        <label class="etiqueta">PRECIO</label>
+                        <input type="text" id="txtPrecio" class="caja" />
+                    </div>
+
+                    <div class="botones">
+                        <input type="button" value="TOTAL" class="btn" onclick="calcularValorTotal();" />
+                        <input type="button" value="LIMPIAR" class="btn" onclick="limpiar();" />
+                    </div>
+
+                    <div class="mensaje" id="lblMensaje"></div>
+                </div>
+
+                <div class="totales">
+                    <div class="lineaTotal">
+                        <span>SUBTOTAL:</span>
+                        <span id="lblSubtotal">0.0</span>
+                    </div>
+
+                    <div class="lineaTotal">
+                        <span>DESCUENTO:</span>
+                        <span id="lblDescuento">0.0</span>
+                    </div>
+
+                    <div class="lineaTotal">
+                        <span>IVA 12%:</span>
+                        <span id="lblValorIVA">0.0</span>
+                    </div>
+
+                    <div class="lineaTotal totalFinal">
+                        <span>TOTAL:</span>
+                        <span id="lblTotal">0.0</span>
+                    </div>
+
+                    <div class="resumen" id="lblResumen"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
