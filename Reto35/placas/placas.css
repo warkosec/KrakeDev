@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+.pagina {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    width: 650px;
+    background: #cfd4d9;
+    padding: 25px 30px;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.titulo {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.etiqueta {
+    width: 140px;
+    font-size: 13px;
+}
+
+.caja {
+    width: 320px;
+    height: 24px;
+    border: 1px solid #7aa87a;
+    padding-left: 6px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn {
+    width: 48%;
+    height: 30px;
+    border: none;
+    background: #5cb85c;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background: #4cae4c;
+}
+
+.seccion {
+    margin-top: 18px;
+}
+
+.resultado {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.errores {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+}
+
+.info {
+    background: rgba(255,255,255,0.35);
+    padding: 12px;
+}
+
+.lineaInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.lbl {
+    font-weight: bold;
+}
